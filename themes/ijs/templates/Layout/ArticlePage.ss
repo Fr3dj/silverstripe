@@ -11,7 +11,12 @@
 
 <div class="post-content">
 $content
-	
+<% if $ReportFile %>
+	<div class="row">
+	<div class="col-sm-12"><a class="btn btn-warning btn-block" href="$ReportFile.URL"> Download this report ($ReportFile.Extension, $ReportFile.Size)</a>
+	</div>
+	</div>
+<% end_if %>	
 </div>
 
 <div class="share-wraper col-sm-12 clearfix">

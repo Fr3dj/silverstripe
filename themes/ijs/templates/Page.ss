@@ -55,7 +55,6 @@ $Layout
 <!-- End of Homepage.ss -->
 
 <!-- Page content from CMS -->
-$Content
 $Form
 <!-- End of Page content from CMS -->
 

@@ -6,11 +6,19 @@
 <div class="row">
 <div class="col-sm-8 blog-main">
 			
-
+<!-- loop through every sub pages -->
 <% loop $Children %>
 	<div class="blog-post anchor">
-		<h2 class="blog-post-title">$title</h2>
-		<p><a href="$link" class="pdf" target="_parent" title="$title">$title</a></p>
+		<h2 class="blog-post-title"><a href="$link" target="_parent" title="$title">$title</a></h2>
+		<!-- Display attachment if the subpage has one -->
+		<% if $ReportFile %>
+			<p><a class="pdf" target="_blank" href="$ReportFile.URL"> Download this report ($ReportFile.Extension, $ReportFile.Size)</a></p>
+		<% end_if %>
+		
+		<!-- Display logo if the subpage has one -->
+		<% with $Logo.SetWidth(300) %>
+			<img class="my-custom-class" src="$URL" alt="" width="$Width" height="$Height" />
+		<% end_with %>
 	</div> 
 	<hr class="featurette-divider">
 <% end_loop %>
