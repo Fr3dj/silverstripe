@@ -39,10 +39,13 @@ class ArticlePage extends Page {
 		 
 		return $fields;
 	}
-	
-	
 
-	
+	//Function to return the latest 8 reports
+	public function LatestReports() { 
+		return ArticlePage::get()
+				->sort('Created', 'ASC')
+				->limit(8);
+	} 
 	
 }
 

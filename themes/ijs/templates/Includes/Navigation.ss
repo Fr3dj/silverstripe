@@ -16,7 +16,7 @@
             <ul class="dropdown-menu" role="menu">
             <li class="dropdown-header">Complaints Process</li>
                 <% loop $Menu(1) %>
-                <li><a class=$LinkingMode href=$Link title=”Go to the $Title page”>$MenuTitle</a></li>
+                <li><a class=$LinkingMode href=$Link title="Go to the $Title page">$MenuTitle</a></li>
             <% end_loop %>
             </ul>
         </li>

@@ -2,10 +2,10 @@
 <h1 class="blog-title">$title</h1>
 <p class="lead blog-description">$Teaser</p>
 </div>
+
 <!-- BEGIN MAIN CONTENT -->
 <div class="row">
-<div class="col-sm-8 blog-main">
-			
+<div class="col-sm-8 blog-main">			
 <!-- loop through every sub pages -->
 <% loop $Children %>
 	<div class="blog-post anchor">
@@ -46,28 +46,16 @@
 <!-- BEGIN SIDEBAR -->
 <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
 	<div class="sidebar-module sidebar-module-inset">
-		<h4>Archives</h4>
+		<h4>Previous Reports</h4>
 		<ol class="list-unstyled">
-			<% loop $Children %>
-			<li><a href="$link" title="$title">$title</a></li>
+			<% loop $LatestReports %>
+				<a href="$link" title="$title">$title</a><br />
 			<% end_loop %>
 		</ol>
-		</div>
-
+	</div>
 	
-	<h2 class="section-title">Categories</h2>
-	<ul class="categories">
-		<li><a href="#">Business <span>(2)</span></a></li>
-		<li><a href="#">Commercial <span>(1)</span></a></li>
-		<li><a href="#">Land <span>(3)</span></a></li>
-		<li><a href="#">Loans <span>(2)</span></a></li>
-		<li><a href="#">News and Updates <span>(6)</span></a></li>
-		<li><a href="#">Properties for Sale <span>(1)</span></a></li>
-		<li><a href="#">Real Estate <span>(1)</span></a></li>
-	</ul>
-	
-	<!-- BEGIN ARCHIVES ACCORDION -->
-	<h2 class="section-title">Archives</h2>
+		
+	<!-- h2 class="section-title">Archives</h2>
 	<div id="accordion" class="panel-group blog-accordion">
 		<div class="panel">
 			<div class="panel-heading">
@@ -129,8 +117,8 @@
 				</div>
 			</div>
 		</div>
-	</div>
-	</div><!-- /.blog-sidebar -->
+	</div -->
+</div><!-- /.blog-sidebar -->
 <!-- END SIDEBAR -->
 
 </div><!-- /.row -->
