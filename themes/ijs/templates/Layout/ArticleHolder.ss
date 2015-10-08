@@ -48,7 +48,7 @@
 	<div class="sidebar-module sidebar-module-inset">
 		<h4>Previous Reports</h4>
 		<ol class="list-unstyled">
-			<% loop $LatestReports %>
+			<% loop $LatestReports(8) %>
 				<a href="$link" title="$title">$title</a><br />
 			<% end_loop %>
 		</ol>
