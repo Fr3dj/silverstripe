@@ -1,6 +1,6 @@
 <div class="blog-header">
 <h1 class="blog-title">$title</h1>
-<p class="lead blog-description">$Teaser. Published on $Date, by $Author</p>
+<p class="lead blog-description">$Teaser. Published on $Date.Long, by $Author</p>
 </div>
 
 <!-- BEGIN MAIN CONTENT -->
