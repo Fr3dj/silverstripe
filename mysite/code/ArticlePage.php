@@ -17,6 +17,7 @@ class ArticlePage extends Page {
         'ReportFile' => 'File'
     );
 	
+		
 	//method that exposes the API for updating the CMS interface for this page
 	public function getCMSFields() {
 		$fields = parent::getCMSFields();
@@ -50,5 +51,5 @@ class ArticlePage extends Page {
 }
 
 class ArticlePage_Controller extends Page_Controller {
-
+	
 }

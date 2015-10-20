@@ -14,9 +14,10 @@ $content
 	<div class="col-sm-12"><a class="btn btn-warning btn-block" href="$ReportFile.URL"> Download this report ($ReportFile.Extension, $ReportFile.Size)</a>
 	</div>
 	</div>
-<% end_if %>	
+<% end_if %>
 </div>
-	
+
+
 </div><!-- /.blog-main -->
 
 <!-- BEGIN SIDEBAR -->
@@ -31,6 +32,7 @@ $content
 		</ol>
 	</div>
 	
+			
 	<div class="sidebar-module">
 		<h4>Print</h4>
 		<a href="javascript:window.print();">Print this page</a>
